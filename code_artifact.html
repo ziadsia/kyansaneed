@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيان سند شباب الصعيد - محافظة الفيوم | تحت رعاية وزارة الشباب والرياضة</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0b192c',
+                            blue: '#1e3e62',
+                            teal: '#00adb5',
+                            gold: '#f39c12',
+                            goldHover: '#d3820d',
+                            lightBg: '#f8fafc',
+                            cardBg: '#ffffff'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(11, 25, 44, 0.95) 0%, rgba(30, 62, 98, 0.92) 50%, rgba(0, 173, 181, 0.85) 100%),
+                        url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+        }
+        .gold-badge-glow {
+            box-shadow: 0 0 15px rgba(243, 156, 18, 0.4);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #00adb5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="custom-scrollbar selection:bg-brand-teal selection:text-white">
+
+    <!-- TOP MINISTRY BAR -->
+    <div class="bg-brand-navy text-gray-300 text-xs sm:text-sm py-2 px-4 border-b border-gray-800">
+        <div class="max-w-7xl mx-mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>تحت رعاية وزارة الشباب والرياضة - جمهورية مصر العربية 🇪🇬</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:+201000000000" class="hover:text-brand-gold transition-colors"><i class="fa-solid fa-phone me-1 text-brand-teal"></i> التواصل المباشر</a>
+                <span class="text-gray-600">|</span>
+                <span class="text-brand-gold font-semibold"><i class="fa-solid fa-location-dot me-1"></i> الفرع الرئيسي: محافظة الفيوم</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO & TITLE -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="relative w-12 h-12 rounded-xl bg-gradient-to-tr from-brand-navy to-brand-teal p-0.5 shadow-md group-hover:scale-105 transition-transform">
+                        <div class="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-bold text-brand-navy">
+                            <i class="fa-solid fa-hands-holding-child text-2xl text-brand-teal"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1.5">
+                            <h1 class="text-lg font-black text-brand-navy tracking-tight leading-none">سند شباب الصعيد</h1>
+                            <span class="bg-brand-gold/10 text-brand-gold border border-brand-gold/30 text-[10px] font-bold px-1.5 py-0.5 rounded">الفيوم</span>
+                        </div>
+                        <p class="text-xs text-gray-500 font-semibold mt-1">الكيان الشبابي التطوعي الأول للمحافظة</p>
+                    </div>
+                </a>
+
+                <!-- DESKTOP MENU LINKS -->
+                <div class="hidden lg:flex items-center gap-7 text-sm font-bold text-gray-700">
+                    <a href="#hero" class="hover:text-brand-teal transition-colors text-brand-teal">الرئيسية</a>
+                    <a href="#about" class="hover:text-brand-teal transition-colors">عن الكيان</a>
+                    <a href="#vision" class="hover:text-brand-teal transition-colors">الرؤية والرسالة</a>
+                    <a href="#committees" class="hover:text-brand-teal transition-colors">لجان الكيان</a>
+                    <a href="#gallery" class="hover:text-brand-teal transition-colors">معرض الفعاليات</a>
+                    <a href="#contact" class="hover:text-brand-teal transition-colors">اتصل بنا</a>
+                </div>
+
+                <!-- CTA BUTTON -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openModal()" class="bg-gradient-to-r from-brand-gold to-yellow-500 hover:from-yellow-600 hover:to-brand-gold text-brand-navy font-black px-5 py-2.5 rounded-xl shadow-lg hover:shadow-brand-gold/30 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center gap-2 text-sm">
+                        <i class="fa-solid fa-user-plus text-xs"></i>
+                        <span>انضم إلينا الآن</span>
+                    </button>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-brand-teal focus:outline-none p-2 text-2xl">
+                        <i class="fa-solid fa-bars" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE DROPDOWN MENU -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl px-4 pt-2 pb-6 space-y-3 font-semibold text-gray-700">
+            <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-slate-100 hover:text-brand-teal">الرئيسية</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-slate-100 hover:text-brand-teal">عن الكيان</a>
+            <a href="#vision" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-slate-100 hover:text-brand-teal">الرؤية والرسالة</a>
+            <a href="#committees" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-slate-100 hover:text-brand-teal">لجان الكيان</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-slate-100 hover:text-brand-teal">معرض الفعاليات</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg hover:bg-slate-100 hover:text-brand-teal">اتصل بنا</a>
+            <button onclick="toggleMobileMenu(); openModal()" class="w-full mt-2 bg-brand-gold text-brand-navy font-bold py-3 rounded-xl shadow-md text-center">
+                <i class="fa-solid fa-user-plus me-1"></i> استمارة التقديم للتطوع
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative hero-gradient text-white min-h-[90vh] flex items-center pt-10 pb-20 overflow-hidden">
+        <!-- Floating decorative shapes -->
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-brand-teal/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -bottom-20 w-96 h-96 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO TEXT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+                    
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-brand-gold text-xs sm:text-sm font-bold shadow-inner">
+                        <i class="fa-solid fa-award text-base animate-bounce"></i>
+                        <span>كيان شبابي رسمي تابع لوزارة الشباب والرياضة</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-wide">
+                        سند شباب الصعيد <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-yellow-300 to-cyan-300">
+                            فرع محافظة الفيوم
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl mx-auto lg:mx-0">
+                        نحن نبض شباب الفيوم وسندهم، نعمل يدًا بيد مع وزارة الشباب والرياضة لبناء جيل قيادي ملهم ومتمكن يساهم في التنمية المستدامة والمجتمعية بمراكز المحافظة كافة.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <button onclick="openModal()" class="w-full sm:w-auto bg-brand-gold hover:bg-yellow-500 text-brand-navy text-base font-black px-8 py-4 rounded-xl shadow-xl hover:shadow-brand-gold/40 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>سجل وانضم لفريقنا الآن</span>
+                        </button>
+
+                        <a href="#committees" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-sm text-white font-bold px-7 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-2">
+                            <span>استكشف اللجان التطوعية</span>
+                            <i class="fa-solid fa-arrow-left text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- QUICK ADVANTAGES BADGES -->
+                    <div class="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-center">
+                        <div class="p-2">
+                            <i class="fa-solid fa-certificate text-brand-gold text-xl mb-1"></i>
+                            <p class="text-xs font-semibold text-slate-300">شهادات معتمدة</p>
+                        </div>
+                        <div class="p-2">
+                            <i class="fa-solid fa-graduation-cap text-brand-teal text-xl mb-1"></i>
+                            <p class="text-xs font-semibold text-slate-300">تدريبات وتطوير</p>
+                        </div>
+                        <div class="p-2">
+                            <i class="fa-solid fa-users-gear text-brand-gold text-xl mb-1"></i>
+                            <p class="text-xs font-semibold text-slate-300">بيئة قيادية ملهمة</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- HERO CARD DISPLAY -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6 shadow-2xl space-y-6">
+                        <div class="relative h-64 rounded-2xl overflow-hidden shadow-lg group">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="شباب الفيوم" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute bottom-4 right-4 left-4 text-white">
+                                <span class="bg-brand-teal text-xs font-black px-2.5 py-1 rounded-md mb-2 inline-block">نشاط ميداني</span>
+                                <h3 class="text-lg font-bold">ملتقى الشباب والتنمية المجتمعية بالفيوم</h3>
+                            </div>
+                        </div>
+
+                        <!-- LIVE IMPACT STATS -->
+                        <div class="bg-brand-navy/80 rounded-2xl p-4 border border-white/10 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-300">
+                                <span>تغطية مراكز المحافظة:</span>
+                                <span class="text-brand-gold font-bold">6 مراكز كاملة</span>
+                            </div>
+                            <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
+                                <div class="bg-gradient-to-r from-brand-teal to-brand-gold h-full w-full"></div>
+                            </div>
+                            <p class="text-[11px] text-gray-400 text-center">الفيوم - سنورس - طامية - إطسا - أبشواي - يوسف الصديق</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="relative -mt-10 z-20 max-w-6xl mx-auto px-4">
+        <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-100 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            
+            <div class="space-y-1 border-l border-gray-100 last:border-0 pl-2">
+                <div class="text-3xl sm:text-4xl font-black text-brand-navy flex items-center justify-center gap-1">
+                    <span class="counter" data-target="650">650</span>
+                    <span class="text-brand-gold text-2xl">+</span>
+                </div>
+                <p class="text-xs sm:text-sm font-bold text-gray-500">شاب وفتاة متطوعين</p>
+            </div>
+
+            <div class="space-y-1 border-l border-gray-100 last:border-0 pl-2">
+                <div class="text-3xl sm:text-4xl font-black text-brand-navy flex items-center justify-center gap-1">
+                    <span class="counter" data-target="45">45</span>
+                    <span class="text-brand-teal text-2xl">+</span>
+                </div>
+                <p class="text-xs sm:text-sm font-bold text-gray-500">فعالية ومبادرة تنموية</p>
+            </div>
+
+            <div class="space-y-1 border-l border-gray-100 last:border-0 pl-2">
+                <div class="text-3xl sm:text-4xl font-black text-brand-navy flex items-center justify-center gap-1">
+                    <span class="counter" data-target="12000">12,000</span>
+                    <span class="text-brand-gold text-2xl">+</span>
+                </div>
+                <p class="text-xs sm:text-sm font-bold text-gray-500">ساعة عمل تطوعية</p>
+            </div>
+
+            <div class="space-y-1">
+                <div class="text-3xl sm:text-4xl font-black text-brand-navy flex items-center justify-center gap-1">
+                    <span class="counter" data-target="6">6</span>
+                    <span class="text-brand-teal text-2xl">مراكز</span>
+                </div>
+                <p class="text-xs sm:text-sm font-bold text-gray-500">تغطية بمحافظة الفيوم</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION (عن الكيان) -->
+    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- IMAGE GRID -->
+            <div class="lg:col-span-6 relative">
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="تدريب الشباب" class="rounded-2xl shadow-lg object-cover h-60 w-full transform hover:scale-105 transition-transform" />
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&q=80" alt="عمل مجتمعي" class="rounded-2xl shadow-lg object-cover h-60 w-full mt-6 transform hover:scale-105 transition-transform" />
+                </div>
+                <!-- EMBEDDED BADGE -->
+                <div class="absolute -bottom-6 right-6 bg-brand-navy text-white p-5 rounded-2xl shadow-2xl border-2 border-brand-gold max-w-xs">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-brand-gold text-3xl"></i>
+                        <div>
+                            <h4 class="font-bold text-sm">مظلة رسمية آمنة</h4>
+                            <p class="text-xs text-gray-300">تحت مظلة وزارة الشباب والرياضة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="lg:col-span-6 space-y-6">
+                <div class="inline-block bg-brand-teal/10 text-brand-teal text-xs font-bold px-3 py-1 rounded-full">
+                    من نحن
+                </div>
+                
+                <h2 class="text-2xl sm:text-4xl font-black text-brand-navy leading-snug">
+                    صرح شبابي يعزز دور الشباب في بناء مستقبل مصر الصعيد
+                </h2>
+
+                <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                    <strong>"كيان سند شباب الصعيد"</strong> بمحافظة الفيوم هو أحد الكيانات الشبابية المعتمدة والتطوعية التابعة لوزارة الشباب والرياضة. يهدف الكيان إلى تجميع الطاقات الشبابية بالمحافظة، وتمكينهم في شتى المجالات القيادية، المجتمعية، والتنموية.
+                </p>
+
+                <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+                    نعمل من خلال لجان متخصصة على تقديم تدريبات نوعية، تنظيم مبادرات مجتمعية ميدانية، وربط الشباب بالفرص والفعاليات الرسمية والوطنية، إيماناً بأن شباب الفيوم هم قاطرة التنمية بالصعيد.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-10 h-10 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-bullseye text-brand-teal"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-navy">التمكين القيادي</h4>
+                            <p class="text-xs text-gray-500">إعداد صف ثانٍ من القادة الشباب بالمحافظة.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-hand-holding-heart text-brand-gold"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-navy">المسؤولية المجتمعية</h4>
+                            <p class="text-xs text-gray-500">إطلاق مبادرات ميدانية تخدم المواطن الفيومي.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section id="vision" class="py-16 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">رؤيتنا ورسالتنا</h2>
+                <p class="text-gray-600 text-sm mt-2">المبادئ والأهداف الاستراتيجية التي تقود مسيرتنا في محافظة الفيوم</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- VISION -->
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-navy text-brand-gold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">الرؤية</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        أن نكون الكيان الشبابي الأول والرائد في محافظة الفيوم في صناعة أجيال شبابية مؤهلة قيادياً ومجتمعياً، تساهم بفاعلية في تحقيق رؤية مصر 2030 للتنمية المستدامة.
+                    </p>
+                </div>
+
+                <!-- MISSION -->
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal text-white flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">الرسالة</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        تقديم منصة التطوع والتطوير الأمثل لشباب الفيوم من خلال برامج تدريبية متخصصة، أنشطة تنموية ميدانية، وتوفير بيئة تحفيزية صاقلة للمهارات والخبرات العملية.
+                    </p>
+                </div>
+
+                <!-- VALUES -->
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-gold text-brand-navy flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-navy mb-3">القيم الجوهرية</h3>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> العطاء والمسؤولية التطوعية</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> العمل الجماعي والشفافية</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> الابتكار والتطوير المستمر</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> الانتماء والوطنية الرسمية</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMITTEES SECTION (لجان الكيان) -->
+    <section id="committees" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="bg-brand-gold/10 text-brand-gold text-xs font-bold px-3 py-1 rounded-full">هيكل الكيان التنظيمي</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-brand-navy mt-3">لجان كيان سند شباب الصعيد - الفيوم</h2>
+            <p class="text-gray-600 text-sm sm:text-base mt-2">اختر اللجنة التي تناسب شغفك ومهاراتك وساهم معنا في صناعة الأثر</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- COMMITTEE 1: ORGANIZATION -->
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-brand-teal hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold group-hover:bg-brand-navy group-hover:text-brand-gold transition-colors">
+                            <i class="fa-solid fa-sitemap"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2.5 py-1 rounded-md">تنظيم وتنسيق</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">لجنة التنظيم والبروتوكول</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        مسؤولة عن إعداد وتنظيم المؤتمرات والفعاليات الميدانية، إدارة الحركة اللوجستية، واستقبال الضيوف والشخصيات العامة وفق قواعد البروتوكول.
+                    </p>
+                </div>
+                <button onclick="applyForCommittee('لجنة التنظيم والبروتوكول')" class="w-full bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+                    <span>الانضمام لهذه اللجنة</span>
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- COMMITTEE 2: MEDIA & PR -->
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-brand-teal hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-teal-50 text-brand-teal flex items-center justify-center text-xl font-bold group-hover:bg-brand-teal group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2.5 py-1 rounded-md">إعلام وتغطية</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">لجنة الإعلام والعلاقات العامة</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        تضم المصورين، كتاب المحتوى، التصميم والتغطية الصحفية والميدانية وإدارة شبكات التواصل الاجتماعي لتوثيق أنشطة الكيان بالفيوم.
+                    </p>
+                </div>
+                <button onclick="applyForCommittee('لجنة الإعلام والعلاقات العامة')" class="w-full bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+                    <span>الانضمام لهذه اللجنة</span>
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- COMMITTEE 3: HR -->
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-brand-teal hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-gold flex items-center justify-center text-xl font-bold group-hover:bg-brand-gold group-hover:text-brand-navy transition-colors">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2.5 py-1 rounded-md">إدارة أفراد</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">لجنة الموارد البشرية (HR)</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        اختيار وإجراء المقابلات للمتطوعين، متابعة الأداء والتقييم، وحل المشكلات وتعزيز الروح المعنوية والود بين كافة أعضاء الكيان.
+                    </p>
+                </div>
+                <button onclick="applyForCommittee('لجنة الموارد البشرية (HR)')" class="w-full bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+                    <span>الانضمام لهذه اللجنة</span>
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- COMMITTEE 4: COMMUNITY WORK -->
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-brand-teal hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-hands-holding-circle"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2.5 py-1 rounded-md">ميداني وتنموي</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">لجنة العمل المجتمعي والتنمية</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        تختص بالتخطيط والتنفيذ للمبادرات الخدمية والإنسانية، زيارة القرى، القوافل التوعوية وتطبيق مبادرات تنموية بمراكز الفيوم.
+                    </p>
+                </div>
+                <button onclick="applyForCommittee('لجنة العمل المجتمعي والتنمية')" class="w-full bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+                    <span>الانضمام لهذه اللجنة</span>
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- COMMITTEE 5: TRAINING & DEVELOPMENT -->
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-brand-teal hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl font-bold group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2.5 py-1 rounded-md">تأهيل وتطوير</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">لجنة التدريب والتثقيف</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        إعداد الورك شوب والدورات التدريبية في مهارات القيادة، التخطيط، والتواصل، واستضافة المحاضرين والمدربين المتخصصين.
+                    </p>
+                </div>
+                <button onclick="applyForCommittee('لجنة التدريب والتثقيف')" class="w-full bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+                    <span>الانضمام لهذه اللجنة</span>
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- COMMITTEE 6: EXTERNAL RELATIONS -->
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:border-brand-teal hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl font-bold group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-handshake font-bold"></i>
+                        </div>
+                        <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2.5 py-1 rounded-md">شراكات وتسويق</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-brand-navy mb-2">لجنة العلاقات الخارجية والشراكات</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-4">
+                        بناء جسور التواصل مع المؤسسات الرسمية، جامعة الفيوم، الهيئات المجتمعية ورعاية الفعاليات لضمان استدامة الكيان.
+                    </p>
+                </div>
+                <button onclick="applyForCommittee('لجنة العلاقات الخارجية والشراكات')" class="w-full bg-slate-100 hover:bg-brand-navy hover:text-white text-brand-navy font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+                    <span>الانضمام لهذه اللجنة</span>
+                    <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PHOTO GALLERY & ACTIVITIES (معرض الفعاليات) -->
+    <section id="gallery" class="py-20 bg-slate-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="bg-brand-teal/10 text-brand-teal text-xs font-bold px-3 py-1 rounded-full">أرشيف الأنشطة</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-brand-navy mt-2">معرض صور الفعاليات بالفيوم</h2>
+                    <p class="text-gray-600 text-sm mt-1">لقطات حية من تدريبات، مؤتمرات، ومبادرات شباب الفيوم</p>
+                </div>
+
+                <!-- GALLERY FILTER BUTTONS -->
+                <div class="flex flex-wrap gap-2 text-xs font-bold" id="gallery-filters">
+                    <button onclick="filterGallery('all')" class="gallery-filter-btn active bg-brand-navy text-white px-4 py-2 rounded-xl transition-all">الكل</button>
+                    <button onclick="filterGallery('conferences')" class="gallery-filter-btn bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-xl border transition-all">مؤتمرات وملتقيات</button>
+                    <button onclick="filterGallery('community')" class="gallery-filter-btn bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-xl border transition-all">حملات مجتمعية</button>
+                    <button onclick="filterGallery('workshops')" class="gallery-filter-btn bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded-xl border transition-all">ورش تدريبية</button>
+                </div>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <!-- PHOTO 1 -->
+                <div class="gallery-item conferences bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=80', 'الملتقى الشبابي الأول بمحافظة الفيوم', 'بحضور قيادات وزارة الشباب والرياضة ومحافظة الفيوم بقصر الثقافة.')">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="ملتقى الفيوم" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[11px] font-bold text-brand-teal bg-teal-50 px-2 py-0.5 rounded">مؤتمرات</span>
+                        <h4 class="font-bold text-brand-navy mt-1 text-sm">الملتقى الشبابي الأول بقصر ثقافة الفيوم</h4>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-regular fa-calendar me-1"></i> قاعة المؤتمرات - الفيوم</p>
+                    </div>
+                </div>
+
+                <!-- PHOTO 2 -->
+                <div class="gallery-item community bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1200&q=80', 'حملة تشجير وتجميل مراكز الفيوم', 'مبادرة تطوعية تنموية نُفذت في مركز سنورس وطامية بمشاركة 100 شاب.')">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80" alt="عمل تطوعي" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">حملة مجتمعية</span>
+                        <h4 class="font-bold text-brand-navy mt-1 text-sm">مبادرة تشجير وتجميل مراكز الفيوم</h4>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-regular fa-calendar me-1"></i> مركز سنورس وطامية</p>
+                    </div>
+                </div>
+
+                <!-- PHOTO 3 -->
+                <div class="gallery-item workshops bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80', 'ورشة مهارات القيادة وإدارة الأزمات', 'برنامج تدريبي مكثف لتأهيل شباب الكيان بجامعة الفيوم.')">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="ورشة عمل" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[11px] font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">ورش تدريبية</span>
+                        <h4 class="font-bold text-brand-navy mt-1 text-sm">برنامج إعداد القادة الشباب بمقر الجامعة</h4>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-regular fa-calendar me-1"></i> جامعة الفيوم</p>
+                    </div>
+                </div>
+
+                <!-- PHOTO 4 -->
+                <div class="gallery-item community bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80', 'قافلة توعوية وإغاثية بقري يوسف الصديق', 'مبادرة دعم وترميم بالتعاون مع مديرية الشباب والرياضة بالفيوم.')">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="قافلة توعوية" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">حملة مجتمعية</span>
+                        <h4 class="font-bold text-brand-navy mt-1 text-sm">قافلة التوعية المجتمعية بيوسف الصديق</h4>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-regular fa-calendar me-1"></i> مركز يوسف الصديق</p>
+                    </div>
+                </div>
+
+                <!-- PHOTO 5 -->
+                <div class="gallery-item conferences bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1200&q=80', 'منتدى شباب الصعيد للتنمية الاقتصادية', 'مشاركة وفد كيان سند شباب الصعيد بالفيوم في المنتدى السنوي.')">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80" alt="منتدى شباب الصعيد" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[11px] font-bold text-brand-teal bg-teal-50 px-2 py-0.5 rounded">مؤتمرات</span>
+                        <h4 class="font-bold text-brand-navy mt-1 text-sm">منتدى تمكين شباب الصعيد الإقليمي</h4>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-regular fa-calendar me-1"></i> ديوان المحافظة</p>
+                    </div>
+                </div>
+
+                <!-- PHOTO 6 -->
+                <div class="gallery-item workshops bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80', 'معسكر إعداد قادة الكيان بالفيوم', 'تدريبات مهارية وميدانية متقدمة على مدار 3 أيام.')">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="معسكر تدريبي" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-[11px] font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">ورش تدريبية</span>
+                        <h4 class="font-bold text-brand-navy mt-1 text-sm">المعسكر التدريبي السنوي لأعضاء الكيان</h4>
+                        <p class="text-xs text-gray-500 mt-1"><i class="fa-regular fa-calendar me-1"></i> المدينة الشبابية بالفيوم</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-16 bg-gradient-to-r from-brand-navy via-brand-blue to-brand-navy text-white text-center relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 relative z-10 space-y-6">
+            <span class="inline-block bg-brand-gold text-brand-navy font-black text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">فرصتك لترك بصمة حقيقية</span>
+            <h2 class="text-3xl sm:text-5xl font-black leading-tight">جاهز لتكون جزءاً من قادة شباب الفيوم؟</h2>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
+                التطوع معنا يفتح لك آفاقاً واسعة للتعلم، تطوير العلاقات العامة، الحصول على شهادات رسمية معتمدة من وزارة الشباب والرياضة.
+            </p>
+            <div>
+                <button onclick="openModal()" class="bg-brand-gold hover:bg-yellow-500 text-brand-navy font-black text-base px-9 py-4 rounded-xl shadow-xl hover:shadow-brand-gold/50 transition-all transform hover:scale-105 inline-flex items-center gap-3">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>تعبئة استمارة الانضمام الفورية</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION (اتصل بنا) -->
+    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- CONTACT INFO -->
+            <div class="lg:col-span-5 space-y-6">
+                <div>
+                    <span class="bg-brand-teal/10 text-brand-teal text-xs font-bold px-3 py-1 rounded-full">تواصل معنا</span>
+                    <h2 class="text-3xl font-black text-brand-navy mt-2">مقرات وتواصل الكيان بالفيوم</h2>
+                    <p class="text-gray-600 text-sm mt-1">سعداء بتواصلكم واستفساراتكم حول أنشطة الكيان ولجانه</p>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                        <div class="w-12 h-12 rounded-xl bg-brand-navy text-brand-gold flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-navy">المقر الرسمي</h4>
+                            <p class="text-xs text-gray-600 mt-1">مديرية الشباب والرياضة بمحافظة الفيوم - حي البارودية - الفيوم</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-navy">واتساب الاستفسارات الرسمي</h4>
+                            <p class="text-xs text-gray-600 mt-1">01000000000 / 01100000000</p>
+                            <a href="https://wa.me/" target="_blank" class="inline-block text-xs font-bold text-emerald-600 mt-1 hover:underline">مراسلة مباشرة <i class="fa-solid fa-arrow-left text-[10px]"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm">
+                        <div class="w-12 h-12 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-navy">البريد الإلكتروني الرسمي</h4>
+                            <p class="text-xs text-gray-600 mt-1">sanad.fayoum@youth.gov.eg</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SOCIAL MEDIA CONNECT -->
+                <div class="pt-4">
+                    <h4 class="font-bold text-xs text-gray-500 uppercase tracking-wider mb-3">صفحاتنا الرسمية على التواصل الاجتماعي</h4>
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg hover:opacity-90 transition-opacity"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-500 via-rose-500 to-purple-600 text-white flex items-center justify-center text-lg hover:opacity-90 transition-opacity"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-black text-white flex items-center justify-center text-lg hover:opacity-90 transition-opacity"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-blue-700 text-white flex items-center justify-center text-lg hover:opacity-90 transition-opacity"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- DIRECT MESSAGE FORM -->
+            <div class="lg:col-span-7 bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+                <h3 class="text-xl font-bold text-brand-navy mb-2">أرسل استفسارك أو رسالتك</h3>
+                <p class="text-xs text-gray-500 mb-6">سيقوم مسؤول العلاقات العامة بالرد عليك في أقرب وقت</p>
+
+                <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">الاسم الكامل *</label>
+                            <input type="text" required placeholder="مثال: أحمد محمد علي" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs transition-colors bg-slate-50" />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 mb-1">رقم الهاتف / الواتساب *</label>
+                            <input type="tel" required placeholder="010xxxxxxxx" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs transition-colors bg-slate-50" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">المركز الإداري بالفيوم</label>
+                        <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs transition-colors bg-slate-50">
+                            <option>مركز الفيوم (العاصمة)</option>
+                            <option>مركز سنورس</option>
+                            <option>مركز طامية</option>
+                            <option>مركز إطسا</option>
+                            <option>مركز أبشواي</option>
+                            <option>مركز يوسف الصديق</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">نص الرسالة أو الاستفسار *</label>
+                        <textarea rows="4" required placeholder="اكتب استفسارك هنا..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs transition-colors bg-slate-50"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-navy hover:bg-brand-blue text-white font-bold py-3.5 rounded-xl text-sm transition-colors shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-brand-gold"></i>
+                        <span>إرسال الرسالة الآن</span>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-navy text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-gray-800">
+                
+                <!-- COL 1 -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-brand-teal text-white flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-hands-holding-child text-xl"></i>
+                        </div>
+                        <h3 class="text-lg font-black">سند شباب الصعيد - الفيوم</h3>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed max-w-md">
+                        كيان شبابي تطوعي رسمي تابع لوزارة الشباب والرياضة يهدف لتمكين وتأهيل شباب محافظة الفيوم في مختلف مجالات العمل التنموي والقيادي.
+                    </p>
+                    <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-lg text-xs text-brand-gold font-bold">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>تحت إشراف مديرية الشباب والرياضة بالفيوم</span>
+                    </div>
+                </div>
+
+                <!-- COL 2 -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-brand-gold">روابط سريعة</h4>
+                    <ul class="text-xs text-gray-400 space-y-2 font-medium">
+                        <li><a href="#about" class="hover:text-white transition-colors">عن الكيان ونشأته</a></li>
+                        <li><a href="#vision" class="hover:text-white transition-colors">الرؤية والرسالة</a></li>
+                        <li><a href="#committees" class="hover:text-white transition-colors">اللجان التطوعية</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition-colors">معرض الصور والألبومات</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">التواصل والمقر الرسمي</a></li>
+                    </ul>
+                </div>
+
+                <!-- COL 3 -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-brand-gold">مراكز التغطية بالفيوم</h4>
+                    <ul class="text-xs text-gray-400 space-y-2">
+                        <li><i class="fa-solid fa-location-dot me-1 text-brand-teal text-[10px]"></i> مركز الفيوم</li>
+                        <li><i class="fa-solid fa-location-dot me-1 text-brand-teal text-[10px]"></i> مركز سنورس</li>
+                        <li><i class="fa-solid fa-location-dot me-1 text-brand-teal text-[10px]"></i> مركز طامية</li>
+                        <li><i class="fa-solid fa-location-dot me-1 text-brand-teal text-[10px]"></i> مركز إطسا</li>
+                        <li><i class="fa-solid fa-location-dot me-1 text-brand-teal text-[10px]"></i> مركز أبشواي و يوسف الصديق</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+                <p>© جميع الحقوق محفوظة لكيان سند شباب الصعيد - محافظة الفيوم</p>
+                <p class="flex items-center gap-1">
+                    <span>صُنع بفرط الشغف لشباب مصر الصعيد 🇪🇬</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- REGISTRATION MODAL (استمارة الانضمام للتطوع) -->
+    <div id="join-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-2xl w-full shadow-2xl overflow-hidden my-8 transform transition-all relative">
+            
+            <!-- MODAL HEADER -->
+            <div class="bg-gradient-to-r from-brand-navy to-brand-blue text-white p-6 relative">
+                <button onclick="closeModal()" class="absolute top-5 left-5 text-gray-300 hover:text-white text-xl w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <span class="bg-brand-gold text-brand-navy text-[11px] font-black px-3 py-1 rounded-full uppercase">استمارة التطوع الرسمية</span>
+                <h3 class="text-xl sm:text-2xl font-black mt-2">انضم لكيان سند شباب الصعيد - الفيوم</h3>
+                <p class="text-xs text-gray-300 mt-1">يرجى ملء البيانات بدقة ليتم التواصل معك لحضور المقابلة الشخصية (Interview)</p>
+            </div>
+
+            <!-- MODAL FORM BODY -->
+            <form onsubmit="handleRegistrationSubmit(event)" class="p-6 space-y-4 max-h-[75vh] overflow-y-auto custom-scrollbar">
+                
+                <!-- NAME -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1">الاسم الرباعي كما في البطاقة *</label>
+                    <input type="text" id="reg-name" required placeholder="مثال: محمود أحمد سيد عبد الله" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50" />
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- PHONE -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">رقم الهاتف / الواتساب *</label>
+                        <input type="tel" id="reg-phone" required placeholder="01012345678" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50" />
+                    </div>
+                    <!-- AGE -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">العمر *</label>
+                        <input type="number" min="16" max="35" required placeholder="مثال: 21" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50" />
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- FAYOUM DISTRICT -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">المركز المقيم به في الفيوم *</label>
+                        <select id="reg-district" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50">
+                            <option value="">اختر المركز...</option>
+                            <option>مركز الفيوم</option>
+                            <option>مركز سنورس</option>
+                            <option>مركز طامية</option>
+                            <option>مركز إطسا</option>
+                            <option>مركز أبشواي</option>
+                            <option>مركز يوسف الصديق</option>
+                        </select>
+                    </div>
+
+                    <!-- QUALIFICATION / COLLEGE -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">الكلية / المؤهل الدراسي *</label>
+                        <input type="text" required placeholder="مثال: كلية الآداب - جامعة الفيوم" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50" />
+                    </div>
+                </div>
+
+                <!-- PREFERRED COMMITTEE -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1">اللجنة المرغوب الانضمام إليها *</label>
+                    <select id="reg-committee" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50 font-bold text-brand-navy">
+                        <option value="">اختر اللجنة التطوعية...</option>
+                        <option value="لجنة التنظيم والبروتوكول">لجنة التنظيم والبروتوكول</option>
+                        <option value="لجنة الإعلام والعلاقات العامة">لجنة الإعلام والعلاقات العامة</option>
+                        <option value="لجنة الموارد البشرية (HR)">لجنة الموارد البشرية (HR)</option>
+                        <option value="لجنة العمل المجتمعي والتنمية">لجنة العمل المجتمعي والتنمية</option>
+                        <option value="لجنة التدريب والتثقيف">لجنة التدريب والتثقيف</option>
+                        <option value="لجنة العلاقات الخارجية والشراكات">لجنة العلاقات الخارجية والشراكات</option>
+                    </select>
+                </div>
+
+                <!-- PREVIOUS EXPERIENCE -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1">هل لديك خبرات تطوعية سابقة؟</label>
+                    <textarea rows="2" placeholder="اذكر الكيانات أو الأنشطة التي شاركت بها إن وجدت..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50"></textarea>
+                </div>
+
+                <!-- REASON FOR JOINING -->
+                <div>
+                    <label class="block text-xs font-bold text-gray-700 mb-1">لماذا ترغب في الانضمام لكيان سند شباب الصعيد بالفيوم؟ *</label>
+                    <textarea rows="2" required placeholder="اكتب دوافعك وما يمكنك إضافته للفريق..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-teal text-xs bg-slate-50"></textarea>
+                </div>
+
+                <div class="pt-3">
+                    <button type="submit" class="w-full bg-gradient-to-r from-brand-gold to-yellow-500 hover:from-yellow-600 hover:to-brand-gold text-brand-navy font-black py-4 rounded-xl shadow-lg transition-all text-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>تأكيد وتسليم استمارة التطوع</span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL FOR GALLERY -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 left-6 text-white text-3xl hover:text-brand-gold transition-colors z-50">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full text-center space-y-4">
+            <img id="lightbox-img" src="" alt="" class="max-h-[75vh] max-w-full mx-auto rounded-2xl shadow-2xl object-contain border border-white/20" />
+            <div class="text-white">
+                <h3 id="lightbox-title" class="text-lg font-bold text-brand-gold"></h3>
+                <p id="lightbox-desc" class="text-xs text-slate-300 mt-1 max-w-xl mx-auto"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed bottom-6 left-6 z-50 hidden bg-brand-navy text-white px-6 py-4 rounded-2xl shadow-2xl border border-brand-gold flex items-center gap-3 transform transition-all duration-300">
+        <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div>
+            <h4 id="toast-title" class="font-bold text-sm">تمت العملية بنجاح</h4>
+            <p id="toast-msg" class="text-xs text-gray-300">سوف نتواصل معك قريباً!</p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // MOBILE MENU TOGGLE
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark';
+            }
+        });
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.add('hidden');
+            menuIcon.className = 'fa-solid fa-bars';
+        }
+
+        // MODAL LOGIC
+        const modal = document.getElementById('join-modal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on backdrop click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        // PRE-FILL COMMITTEE IN FORM
+        function applyForCommittee(committeeName) {
+            document.getElementById('reg-committee').value = committeeName;
+            openModal();
+        }
+
+        // GALLERY FILTER LOGIC
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const btns = document.querySelectorAll('.gallery-filter-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-brand-navy', 'text-white');
+                btn.classList.add('bg-white', 'text-gray-700');
+            });
+
+            event.target.classList.remove('bg-white', 'text-gray-700');
+            event.target.classList.add('bg-brand-navy', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // LIGHTBOX LOGIC
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxDesc = document.getElementById('lightbox-desc');
+
+        function openLightbox(imgSrc, title, desc) {
+            lightboxImg.src = imgSrc;
+            lightboxTitle.innerText = title;
+            lightboxDesc.innerText = desc;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // TOAST ALERT LOGIC
+        function showToast(title, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-title').innerText = title;
+            document.getElementById('toast-msg').innerText = message;
+
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4500);
+        }
+
+        // FORM SUBMISSION HANDLERS
+        function handleRegistrationSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('reg-name').value;
+            closeModal();
+            showToast(`أهلاً بك يا ${name}!`, 'تم استلام استمارة تطوعك بنجاح. سيتم التواصل معك عبر الواتساب للمقابلة الشخصية.');
+            e.target.reset();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast('تم إرسال رسالتك بنجاح', 'شكراً لتواصلك مع كيان سند شباب الصعيد بالفيوم. سنرد عليك في أقرب وقت.');
+            e.target.reset();
+        }
+
+        // ANIMATE STATS COUNTER ON SCROLL
+        let countersTriggered = false;
+        window.addEventListener('scroll', () => {
+            const statsSection = document.querySelector('.counter');
+            if (!statsSection) return;
+            const rect = statsSection.getBoundingClientRect();
+            if (rect.top < window.innerHeight && !countersTriggered) {
+                countersTriggered = true;
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const speed = target / 50;
+                    const updateCount = () => {
+                        count += speed;
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count).toLocaleString();
+                            setTimeout(updateCount, 30);
+                        } else {
+                            counter.innerText = target.toLocaleString();
+                        }
+                    };
+                    updateCount();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
