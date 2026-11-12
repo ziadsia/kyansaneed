@@ -119,7 +119,7 @@
 
                 <!-- MOBILE MENU BUTTON -->
                 <div class="lg:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-brand-teal focus:outline-none p-2 text-2xl">
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="text-gray-700 hover:text-brand-teal focus:outline-none p-2 text-2xl">
                         <i class="fa-solid fa-bars" id="menu-icon"></i>
                     </button>
                 </div>
@@ -175,21 +175,6 @@
                             <i class="fa-solid fa-arrow-left text-xs"></i>
                         </a>
                     </div>
-
-                    <div class="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-center">
-                        <div class="p-2">
-                            <i class="fa-solid fa-certificate text-brand-gold text-xl mb-1"></i>
-                            <p class="text-xs font-semibold text-slate-300">شهادات معتمدة</p>
-                        </div>
-                        <div class="p-2">
-                            <i class="fa-solid fa-graduation-cap text-brand-teal text-xl mb-1"></i>
-                            <p class="text-xs font-semibold text-slate-300">تدريبات وتطوير</p>
-                        </div>
-                        <div class="p-2">
-                            <i class="fa-solid fa-users-gear text-brand-gold text-xl mb-1"></i>
-                            <p class="text-xs font-semibold text-slate-300">بيئة قيادية ملهمة</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="lg:col-span-5 flex justify-center">
@@ -201,17 +186,6 @@
                                 <span class="bg-brand-teal text-xs font-black px-2.5 py-1 rounded-md mb-2 inline-block">نشاط ميداني</span>
                                 <h3 class="text-lg font-bold">ملتقى الشباب والتنمية المجتمعية بالفيوم</h3>
                             </div>
-                        </div>
-
-                        <div class="bg-brand-navy/80 rounded-2xl p-4 border border-white/10 space-y-3">
-                            <div class="flex items-center justify-between text-xs text-slate-300">
-                                <span>تغطية مراكز المحافظة:</span>
-                                <span class="text-brand-gold font-bold">6 مراكز كاملة</span>
-                            </div>
-                            <div class="w-full bg-gray-700 h-2 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-brand-teal to-brand-gold h-full w-full"></div>
-                            </div>
-                            <p class="text-[11px] text-gray-400 text-center">الفيوم - سنورس - طامية - إطسا - أبشواي - يوسف الصديق</p>
                         </div>
                     </div>
                 </div>
@@ -261,15 +235,6 @@
                     <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="تدريب الشباب" class="rounded-2xl shadow-lg object-cover h-60 w-full transform hover:scale-105 transition-transform" />
                     <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&q=80" alt="عمل مجتمعي" class="rounded-2xl shadow-lg object-cover h-60 w-full mt-6 transform hover:scale-105 transition-transform" />
                 </div>
-                <div class="absolute -bottom-6 right-6 bg-brand-navy text-white p-5 rounded-2xl shadow-2xl border-2 border-brand-gold max-w-xs">
-                    <div class="flex items-center gap-3">
-                        <i class="fa-solid fa-shield-halved text-brand-gold text-3xl"></i>
-                        <div>
-                            <h4 class="font-bold text-sm">مظلة رسمية آمنة</h4>
-                            <p class="text-xs text-gray-300">تحت مظلة وزارة الشباب والرياضة</p>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div class="lg:col-span-6 space-y-6">
@@ -278,29 +243,6 @@
                 <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                     <strong>"كيان سند شباب الصعيد"</strong> بمحافظة الفيوم هو أحد الكيانات الشبابية المعتمدة والتطوعية التابعة لوزارة الشباب والرياضة. يهدف الكيان إلى تجميع الطاقات الشبابية بالمحافظة، وتمكينهم في شتى المجالات القيادية، المجتمعية، والتنموية.
                 </p>
-                <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
-                    نعمل من خلال لجان متخصصة على تقديم تدريبات نوعية، تنظيم مبادرات مجتمعية ميدانية، وربط الشباب بالفرص والفعاليات الرسمية والوطنية، إيماناً بأن شباب الفيوم هم قاطرة التنمية بالصعيد.
-                </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
-                        <div class="w-10 h-10 rounded-lg bg-brand-navy/10 text-brand-navy flex items-center justify-center shrink-0">
-                            <i class="fa-solid fa-bullseye text-brand-teal"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-sm text-brand-navy">التمكين القيادي</h4>
-                            <p class="text-xs text-gray-500">إعداد صف ثانٍ من القادة الشباب بالمحافظة.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
-                        <div class="w-10 h-10 rounded-lg bg-brand-gold/10 text-brand-gold flex items-center justify-center shrink-0">
-                            <i class="fa-solid fa-hand-holding-heart text-brand-gold"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-sm text-brand-navy">المسؤولية المجتمعية</h4>
-                            <p class="text-xs text-gray-500">إطلاق مبادرات ميدانية تخدم المواطن الفيومي.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -314,148 +256,187 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-navy text-brand-gold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
                     <h3 class="text-xl font-bold text-brand-navy mb-3">الرؤية</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">
                         أن نكون الكيان الشبابي الأول والرائد في محافظة الفيوم في صناعة أجيال شبابية مؤهلة قيادياً ومجتمعياً، تساهم بفاعلية في تحقيق رؤية مصر 2030 للتنمية المستدامة.
                     </p>
                 </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-teal text-white flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-rocket"></i>
-                    </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
                     <h3 class="text-xl font-bold text-brand-navy mb-3">الرسالة</h3>
                     <p class="text-gray-600 text-sm leading-relaxed">
                         تقديم منصة التطوع والتطوير الأمثل لشباب الفيوم من خلال برامج تدريبية متخصصة، أنشطة تنموية ميدانية، وتوفير بيئة تحفيزية صاقلة للمهارات والخبرات العملية.
                     </p>
                 </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
-                    <div class="w-14 h-14 rounded-2xl bg-brand-gold text-brand-navy flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-gem"></i>
-                    </div>
+                <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100">
                     <h3 class="text-xl font-bold text-brand-navy mb-3">القيم الجوهرية</h3>
                     <ul class="text-gray-600 text-sm space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> العطاء والمسؤولية التطوعية</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> العمل الجماعي والشفافية</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> الابتكار والتطوير المستمر</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-teal text-xs"></i> الانتماء والوطنية الرسمية</li>
+                        <li><i class="fa-solid fa-check text-brand-teal text-xs me-1"></i> العطاء والمسؤولية التطوعية</li>
+                        <li><i class="fa-solid fa-check text-brand-teal text-xs me-1"></i> العمل الجماعي والشفافية</li>
+                        <li><i class="fa-solid fa-check text-brand-teal text-xs me-1"></i> الابتكار والتطوير المستمر</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMMITTEES SECTION -->
+    <!-- COMMITTEES SECTION (جميع الـ 21 لجنة) -->
     <section id="committees" class="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="inline-block py-1.5 px-4 rounded-full bg-brand-teal/10 text-brand-teal font-bold text-sm mb-3 tracking-wide">
-                    هيكل الكيان التطوعي
-                </span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy mb-4">
-                    اكتشف اللجان المتاحة وانضم لفريقنا
-                </h2>
-                <p class="text-gray-600 text-base md:text-lg leading-relaxed">
-                    21 لجنة متخصصة تغطي كافة المجالات التنموية والإدارية والمجتمعية؛ اختر اللجنة التي تناسب مهاراتك وشغفك.
-                </p>
+                <span class="inline-block py-1.5 px-4 rounded-full bg-brand-teal/10 text-brand-teal font-bold text-sm mb-3">هيكل الكيان التطوعي</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-navy mb-4">اكتشف اللجان المتاحة وانضم لفريقنا</h2>
+                <p class="text-gray-600 text-base">21 لجنة متخصصة تغطي كافة المجالات التنموية والإدارية والمجتمعية؛ اختر اللجنة التي تناسب مهاراتك وشغفك.</p>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10 bg-white p-3 rounded-2xl shadow-sm border border-gray-100">
-                <div class="flex flex-wrap items-center justify-center gap-2" id="committee-filters">
-                    <button onclick="filterCommittees('all', this)" class="filter-btn active px-4 py-2 rounded-xl text-sm font-bold bg-brand-navy text-white transition-all shadow-sm">
-                        الكل (21)
-                    </button>
-                    <button onclick="filterCommittees('admin', this)" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold text-gray-600 hover:bg-gray-100 transition-all">
-                        الإدارية والتنظيمية
-                    </button>
-                    <button onclick="filterCommittees('community', this)" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold text-gray-600 hover:bg-gray-100 transition-all">
-                        المجتمعية والتنموية
-                    </button>
-                    <button onclick="filterCommittees('innovation', this)" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold text-gray-600 hover:bg-gray-100 transition-all">
-                        الثقافة والابتكار
-                    </button>
-                </div>
-
-                <div class="relative w-full md:w-72">
-                    <input type="text" id="committee-search" onkeyup="searchCommittees()" placeholder="ابحث عن لجنة..." 
-                        class="w-full pl-4 pr-10 py-2.5 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal focus:bg-white transition-all">
-                    <i class="fa-solid fa-magnifying-glass text-gray-400 absolute right-3.5 top-3 text-sm"></i>
-                </div>
-            </div>
-
+            <!-- شبكة الـ 21 لجنة -->
             <div id="committees-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div data-category="admin" class="committee-card relative bg-white rounded-3xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-brand-navy to-brand-teal opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <span class="absolute -left-2 -bottom-4 text-7xl font-black text-slate-100/80 select-none pointer-events-none group-hover:text-brand-teal/10 transition-colors">01</span>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-navy/10 to-brand-teal/10 flex items-center justify-center text-brand-navy text-2xl group-hover:from-brand-navy group-hover:to-brand-teal group-hover:text-white transition-all duration-300 shadow-inner">
-                                <i class="fa-solid fa-sitemap"></i>
-                            </div>
-                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600">إدارية</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2.5 group-hover:text-brand-navy transition-colors">لجنة التنظيم</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-6">تنظيم الفعاليات والمؤتمرات والأنشطة الميدانية وإدارة خطط التنفيذ اللوجستية للكيان.</p>
-                    </div>
-                    <button onclick="openModal('لجنة التنظيم')" class="relative z-10 w-full py-2.5 px-4 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm flex items-center justify-between group-hover:bg-brand-teal group-hover:text-white transition-all duration-300">
-                        <span>انضم للجنة الآن</span>
-                        <i class="fa-solid fa-arrow-left transform group-hover:-translate-x-1 transition-transform"></i>
-                    </button>
+                <!-- 1 -->
+                <div data-category="admin" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">1. لجنة التنظيم والفعاليات</h3><p class="text-gray-600 text-sm mb-4">إدارة وتنسيق الفعاليات والمؤتمرات الميدانية واللوجستية.</p></div>
+                    <button onclick="openModal('لجنة التنظيم والفعاليات')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
                 </div>
-
-                <div data-category="admin" class="committee-card relative bg-white rounded-3xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-brand-navy to-brand-teal opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <span class="absolute -left-2 -bottom-4 text-7xl font-black text-slate-100/80 select-none pointer-events-none group-hover:text-brand-teal/10 transition-colors">02</span>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-navy/10 to-brand-teal/10 flex items-center justify-center text-brand-navy text-2xl group-hover:from-brand-navy group-hover:to-brand-teal group-hover:text-white transition-all duration-300 shadow-inner">
-                                <i class="fa-solid fa-users-rectangle"></i>
-                            </div>
-                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600">إدارية</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2.5 group-hover:text-brand-navy transition-colors">لجنة العضوية والمتابعة</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-6">متابعة المتطوعين، وتنظيم سجلات الأعضاء، وتقييم الأداء الميداني وتطويره بشكل دوري.</p>
-                    </div>
-                    <button onclick="openModal('لجنة العضوية والمتابعة')" class="relative z-10 w-full py-2.5 px-4 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm flex items-center justify-between group-hover:bg-brand-teal group-hover:text-white transition-all duration-300">
-                        <span>انضم للجنة الآن</span>
-                        <i class="fa-solid fa-arrow-left transform group-hover:-translate-x-1 transition-transform"></i>
-                    </button>
+                <!-- 2 -->
+                <div data-category="admin" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">2. لجنة العضوية والمتابعة</h3><p class="text-gray-600 text-sm mb-4">متابعة المتطوعين وشؤون الأعضاء وقواعد البيانات وتطوير الأداء.</p></div>
+                    <button onclick="openModal('لجنة العضوية والمتابعة')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
                 </div>
+                <!-- 3 -->
+                <div data-category="innovation" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">3. لجنة الإعلام والتسويق الرقمي</h3><p class="text-gray-600 text-sm mb-4">إدارة منصات التواصل الاجتماعي والتغطية الإعلامية وصناعة المحتوى.</p></div>
+                    <button onclick="openModal('لجنة الإعلام والتسويق الرقمي')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 4 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">4. لجنة المبادرات المجتمعية</h3><p class="text-gray-600 text-sm mb-4">إطلاق وتنسيق القوافل التنموية والمبادرات الإنسانية الميدانية.</p></div>
+                    <button onclick="openModal('لجنة المبادرات المجتمعية')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 5 -->
+                <div data-category="innovation" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">5. لجنة التدريب وتنمية المهارات</h3><p class="text-gray-600 text-sm mb-4">إعداد ورش عمل ووررش تأهيلية وبرامج تدريبية للشباب.</p></div>
+                    <button onclick="openModal('لجنة التدريب وتنمية المهارات')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 6 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">6. لجنة العلاقات العامة</h3><p class="text-gray-600 text-sm mb-4">بناء جسور التواصل مع الجهات الرسمية والمؤسسات المختلفة.</p></div>
+                    <button onclick="openModal('لجنة العلاقات العامة')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 7 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">7. اللجنة الثقافية والفنية</h3><p class="text-gray-600 text-sm mb-4">تنظيم الفعاليات الثقافية، المسابقات الفنية، وإحياء التراث.</p></div>
+                    <button onclick="openModal('اللجنة الثقافية والفنية')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 8 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">8. اللجنة الرياضية والشبابية</h3><p class="text-gray-600 text-sm mb-4">تنظيم الدورات الرياضية والتشجيع على ممارسة الرياضة واللياقة البدنية.</p></div>
+                    <button onclick="openModal('اللجنة الرياضية والشبابية')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 9 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">9. لجنة التنمية المستدامة والبيئة</h3><p class="text-gray-600 text-sm mb-4">إطلاق حملات التشجير والتوعية بأهمية الحفاظ على البيئة.</p></div>
+                    <button onclick="openModal('لجنة التنمية المستدامة والبيئة')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 10 -->
+                <div data-category="innovation" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">10. لجنة التكنولوجيا والتحول الرقمي</h3><p class="text-gray-600 text-sm mb-4">تطوير منصات الكيان الرقمية وإدارة الأنظمة والحلول التكنولوجية.</p></div>
+                    <button onclick="openModal('لجنة التكنولوجيا والتحول الرقمي')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 11 -->
+                <div data-category="admin" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">11. لجنة الدعم القانوني</h3><p class="text-gray-600 text-sm mb-4">تقديم الاستشارات التنظيمية ومراجعة اللوائح الداخلية للأنشطة.</p></div>
+                    <button onclick="openModal('لجنة الدعم القانوني')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 12 -->
+                <div data-category="admin" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">12. اللجنة المالية والاقتصادية</h3><p class="text-gray-600 text-sm mb-4">إدارة موازنات المبادرات وتخطيط الموارد المالية للفعاليات.</p></div>
+                    <button onclick="openModal('اللجنة المالية والاقتصادية')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 13 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">13. لجنة رعاية الموهوبين</h3><p class="text-gray-600 text-sm mb-4">اكتشاف ودعم الموهوبين في شتى المجالات العلمية والفنية.</p></div>
+                    <button onclick="openModal('لجنة رعاية الموهوبين')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 14 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">14. لجنة الصحة المجتمعية</h3><p class="text-gray-600 text-sm mb-4">تنظيم القوافل الطبية والتوعية بالصحة العامة والوقاية.</p></div>
+                    <button onclick="openModal('لجنة الصحة المجتمعية')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 15 -->
+                <div data-category="innovation" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">15. لجنة ريادة الأعمال والابتكار</h3><p class="text-gray-600 text-sm mb-4">دعم أفكار الشباب الريادية ومشاريعهم الناشئة بالمحافظة.</p></div>
+                    <button onclick="openModal('لجنة ريادة الأعمال والابتكار')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 16 -->
+                <div data-category="admin" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">16. لجنة المتابعة والتقييم</h3><p class="text-gray-600 text-sm mb-4">قياس أثر المبادرات والفعاليات ورفع تقارير الأداء للإدارة.</p></div>
+                    <button onclick="openModal('لجنة المتابعة والتقييم')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 17 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">17. لجنة الوعي الوطني والتثقيف</h3><p class="text-gray-600 text-sm mb-4">تعزيز الانتماء الوطني وتنظيم الندوات التثقيفية والوطنية.</p></div>
+                    <button onclick="openModal('لجنة الوعي الوطني والتثقيف')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 18 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">18. لجنة الأنشطة الطلابية</h3><p class="text-gray-600 text-sm mb-4">ربط الكيان بالجامعات ومدارس المحافظة واستقطاب الطلاب.</p></div>
+                    <button onclick="openModal('لجنة الأنشطة الطلابية')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 19 -->
+                <div data-category="admin" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">19. لجنة الأمن والسلامة</h3><p class="text-gray-600 text-sm mb-4">تأمين الفعاليات الجماهيرية وتطبيق إجراءات الأمن والسلامة.</p></div>
+                    <button onclick="openModal('لجنة الأمن والسلامة')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 20 -->
+                <div data-category="community" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">20. لجنة التنسيق والمراكز</h3><p class="text-gray-600 text-sm mb-4">التنسيق بين منسقي المراكز الـ 6 بمحافظة الفيوم.</p></div>
+                    <button onclick="openModal('لجنة التنسيق والمراكز')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+                <!-- 21 -->
+                <div data-category="innovation" class="committee-card bg-white rounded-3xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-xl font-bold text-gray-900 mb-2">21. لجنة الابتكار المجتمعي</h3><p class="text-gray-600 text-sm mb-4">ابتكار حلول غير تقليدية للتحديات المجتمعية بالمحافظة.</p></div>
+                    <button onclick="openModal('لجنة الابتكار المجتمعي')" class="w-full py-2.5 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm hover:bg-brand-teal hover:text-white transition-all">انضم للجنة الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div data-category="innovation" class="committee-card relative bg-white rounded-3xl p-6 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group overflow-hidden flex flex-col justify-between">
-                    <div class="absolute top-0 right-0 left-0 h-1.5 bg-gradient-to-l from-brand-navy to-brand-teal opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <span class="absolute -left-2 -bottom-4 text-7xl font-black text-slate-100/80 select-none pointer-events-none group-hover:text-brand-teal/10 transition-colors">03</span>
-                    <div>
-                        <div class="flex items-center justify-between mb-5">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-navy/10 to-brand-teal/10 flex items-center justify-center text-brand-navy text-2xl group-hover:from-brand-navy group-hover:to-brand-teal group-hover:text-white transition-all duration-300 shadow-inner">
-                                <i class="fa-solid fa-photo-film"></i>
-                            </div>
-                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600">إعلامية</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2.5 group-hover:text-brand-navy transition-colors">لجنة الإعلام والتسويق</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-6">إدارة منصات التواصل الاجتماعي، والتغطية الإعلامية للفعاليات، وتصميم المحتوى البصري والترويجي.</p>
+    <!-- GALLERY SECTION (معرض الفعاليات) -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-brand-gold/10 text-brand-gold font-bold text-xs mb-2">لقطات نعتز بها</span>
+                <h2 class="text-3xl font-black text-brand-navy">معرض فعاليات وأنشطة الكيان بالفيوم</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-lg h-64 relative group">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80" alt="فعالية 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 to-transparent flex items-end p-4">
+                        <p class="text-white font-bold text-sm">لقاء قيادات الشباب بالفيوم</p>
                     </div>
-                    <button onclick="openModal('لجنة الإعلام والتسويق')" class="relative z-10 w-full py-2.5 px-4 rounded-xl bg-slate-50 text-brand-navy font-bold text-sm flex items-center justify-between group-hover:bg-brand-teal group-hover:text-white transition-all duration-300">
-                        <span>انضم للجنة الآن</span>
-                        <i class="fa-solid fa-arrow-left transform group-hover:-translate-x-1 transition-transform"></i>
-                    </button>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg h-64 relative group">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="فعالية 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 to-transparent flex items-end p-4">
+                        <p class="text-white font-bold text-sm">ورش تدريبية وتأهيلية للشباب</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg h-64 relative group">
+                    <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=600&q=80" alt="فعالية 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/80 to-transparent flex items-end p-4">
+                        <p class="text-white font-bold text-sm">مبادرات مجتمعية ميدانية</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-black text-brand-navy mb-4">تواصل معنا</h2>
-            <p class="text-gray-600 text-sm mb-8">نسعد بتواصلكم معنا والإجابة عن كافة استفساراتكم المتعلقة بالانضمام والفعاليات</p>
-            <div class="inline-flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-gray-100">
-                <i class="fa-solid fa-location-dot text-brand-teal text-xl"></i>
+            <p class="text-gray-600 text-sm mb-6">نسعد بتواصلكم معنا والانضمام لأسرة كيان سند شباب الصعيد بالفيوم</p>
+            <div class="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100">
+                <i class="fa-solid fa-location-dot text-brand-teal text-lg"></i>
                 <span class="font-bold text-sm text-brand-navy">محافظة الفيوم - جمهورية مصر العربية</span>
             </div>
         </div>
@@ -514,9 +495,27 @@
                     <label class="block text-xs font-bold text-gray-700 mb-1">اللجنة التطوعية المفضل الانضمام لها <span class="text-red-500">*</span></label>
                     <select id="committee" required class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
                         <option value="">اختر اللجنة المناسبة لشغفك</option>
-                        <option value="لجنة التنظيم">لجنة التنظيم والفعاليات</option>
-                        <option value="لجنة العضوية">لجنة العضوية والمتابعة</option>
-                        <option value="لجنة الإعلام والتسويق">لجنة الإعلام والتسويق</option>
+                        <option value="لجنة التنظيم والفعاليات">1. لجنة التنظيم والفعاليات</option>
+                        <option value="لجنة العضوية والمتابعة">2. لجنة العضوية والمتابعة</option>
+                        <option value="لجنة الإعلام والتسويق الرقمي">3. لجنة الإعلام والتسويق الرقمي</option>
+                        <option value="لجنة المبادرات المجتمعية">4. لجنة المبادرات المجتمعية</option>
+                        <option value="لجنة التدريب وتنمية المهارات">5. لجنة التدريب وتنمية المهارات</option>
+                        <option value="لجنة العلاقات العامة">6. لجنة العلاقات العامة</option>
+                        <option value="اللجنة الثقافية والفنية">7. اللجنة الثقافية والفنية</option>
+                        <option value="اللجنة الرياضية والشبابية">8. اللجنة الرياضية والشبابية</option>
+                        <option value="لجنة التنمية المستدامة والبيئة">9. لجنة التنمية المستدامة والبيئة</option>
+                        <option value="لجنة التكنولوجيا والتحول الرقمي">10. لجنة التكنولوجيا والتحول الرقمي</option>
+                        <option value="لجنة الدعم القانوني">11. لجنة الدعم القانوني</option>
+                        <option value="اللجنة المالية والاقتصادية">12. اللجنة المالية والاقتصادية</option>
+                        <option value="لجنة رعاية الموهوبين">13. لجنة رعاية الموهوبين</option>
+                        <option value="لجنة الصحة المجتمعية">14. لجنة الصحة المجتمعية</option>
+                        <option value="لجنة ريادة الأعمال والابتكار">15. لجنة ريادة الأعمال والابتكار</option>
+                        <option value="لجنة المتابعة والتقييم">16. لجنة المتابعة والتقييم</option>
+                        <option value="لجنة الوعي الوطني والتثقيف">17. لجنة الوعي الوطني والتثقيف</option>
+                        <option value="لجنة الأنشطة الطلابية">18. لجنة الأنشطة الطلابية</option>
+                        <option value="لجنة الأمن والسلامة">19. لجنة الأمن والسلامة</option>
+                        <option value="لجنة التنسيق والمراكز">20. لجنة التنسيق والمراكز</option>
+                        <option value="لجنة الابتكار المجتمعي">21. لجنة الابتكار المجتمعي</option>
                     </select>
                 </div>
 
@@ -548,39 +547,6 @@
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
-        }
-
-        // تصفية اللجان (الفلترة والبحث)
-        function filterCommittees(category, btn) {
-            document.querySelectorAll('.filter-btn').forEach(b => {
-                b.classList.remove('active', 'bg-brand-navy', 'text-white');
-                b.classList.add('text-gray-600');
-            });
-            btn.classList.add('active', 'bg-brand-navy', 'text-white');
-            btn.classList.remove('text-gray-600');
-
-            const cards = document.querySelectorAll('.committee-card');
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-
-        function searchCommittees() {
-            const query = document.getElementById('committee-search').value.toLowerCase();
-            const cards = document.querySelectorAll('.committee-card');
-            cards.forEach(card => {
-                const title = card.querySelector('h3').textContent.toLowerCase();
-                const desc = card.querySelector('p').textContent.toLowerCase();
-                if (title.includes(query) || desc.includes(query)) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
         }
 
         // إرسال البيانات لجوجل شيت عند ملء الاستمارة
