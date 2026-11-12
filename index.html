@@ -455,31 +455,32 @@
                 <p class="text-xs text-gray-500 mt-1">كن جزءاً من صناعة التغيير في محافظة الفيوم</p>
             </div>
 
-            <form id="volunteerForm" class="space-y-4">
+            <!-- تم ربط الفورم برابط Formspree الجديد -->
+            <form id="volunteerForm" action="https://formspree.io/f/xjywkejq" method="POST" class="space-y-4">
                 <div>
                     <label class="block text-xs font-bold text-gray-700 mb-1">الاسم الرباعي <span class="text-red-500">*</span></label>
-                    <input type="text" id="fullName" required placeholder="اكتب اسمك الثلاثي أو الرباعي" class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
+                    <input type="text" id="fullName" name="fullName" required placeholder="اكتب اسمك الثلاثي أو الرباعي" class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-gray-700 mb-1">رقم الهاتف (واتساب) <span class="text-red-500">*</span></label>
-                        <input type="tel" id="phone" required placeholder="010XXXXXXXX" class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
+                        <input type="tel" id="phone" name="phone" required placeholder="010XXXXXXXX" class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-700 mb-1">الرقم القومي (14 رقم) <span class="text-red-500">*</span></label>
-                        <input type="text" id="nationalId" maxlength="14" required placeholder="الرقم القومي للتحقق" class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
+                        <input type="text" id="nationalId" name="nationalId" maxlength="14" required placeholder="الرقم القومي للتحقق" class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-gray-700 mb-1">الكلية / التخصص الدراسي</label>
-                        <input type="text" id="faculty" placeholder="مثال: تربية، زراعة..." class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
+                        <input type="text" id="faculty" name="faculty" placeholder="مثال: تربية، زراعة..." class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-700 mb-1">المركز التابع له بالفيوم <span class="text-red-500">*</span></label>
-                        <select id="center" required class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
+                        <select id="center" name="center" required class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
                             <option value="">اختر مركزك</option>
                             <option value="الفيوم">مركز الفيوم</option>
                             <option value="سنورس">مركز سنورس</option>
@@ -493,7 +494,7 @@
 
                 <div>
                     <label class="block text-xs font-bold text-gray-700 mb-1">اللجنة التطوعية المفضل الانضمام لها <span class="text-red-500">*</span></label>
-                    <select id="committee" required class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
+                    <select id="committee" name="committee" required class="w-full px-4 py-3 bg-slate-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-brand-teal">
                         <option value="">اختر اللجنة المناسبة لشغفك</option>
                         <option value="لجنة التنظيم والفعاليات">1. لجنة التنظيم والفعاليات</option>
                         <option value="لجنة العضوية والمتابعة">2. لجنة العضوية والمتابعة</option>
@@ -527,11 +528,8 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT FOR UI & SHEETS SYNC -->
+    <!-- JAVASCRIPT FOR UI & FORMSPREE SYNC -->
     <script>
-        // رابط السكربت الخاص بك لربط جوجل شيت
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwNkuAIcOsYUR95_jaDC191oO_ReW6rkjudJltqF4k-vJ7YYFc7b5aPaa-EbvZtrWtj/exec";
-
         function openModal(committeeName = "") {
             const modal = document.getElementById('registrationModal');
             modal.classList.remove('hidden');
@@ -549,43 +547,34 @@
             menu.classList.toggle('hidden');
         }
 
-        // إرسال البيانات لجوجل شيت عند ملء الاستمارة
+        // إرسال البيانات مباشرة عبر Formspree بنجاح
         document.getElementById('volunteerForm').addEventListener('submit', function(e) {
             e.preventDefault();
-
+            
+            const form = this;
             const submitBtn = document.getElementById('submitBtn');
             const btnText = document.getElementById('btnText');
             
             submitBtn.disabled = true;
-            btnText.innerHTML = "جاري إرسال بياناتك وحفظها...";
+            btnText.innerHTML = "جاري إرسال بياناتك...";
 
-            const formData = {
-                fullName: document.getElementById('fullName').value,
-                phone: document.getElementById('phone').value,
-                nationalId: document.getElementById('nationalId').value,
-                faculty: document.getElementById('faculty').value,
-                center: document.getElementById('center').value,
-                committee: document.getElementById('committee').value
-            };
-
-            fetch(SCRIPT_URL, {
+            fetch(form.action, {
                 method: 'POST',
-                mode: 'no-cors',
+                body: new FormData(form),
                 headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(() => {
-                alert('🎉 تم إرسال استمارة التسجيل بنجاح! نورت كيان سند شباب الصعيد بالفيوم، وهنتواصل معاك قريب جداً.');
-                document.getElementById('volunteerForm').reset();
-                closeModal();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('حدث خطأ أثناء الإرسال، برجاء المحاولة مرة أخرى.');
-            })
-            .finally(() => {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('🎉 تم إرسال استمارة التسجيل بنجاح! نورت كيان سند شباب الصعيد بالفيوم، وهنتواصل معاك قريب جداً.');
+                    form.reset();
+                    closeModal();
+                } else {
+                    alert('حدث خطأ أثناء الإرسال، برجاء المحاولة مرة أخرى.');
+                }
+            }).catch(error => {
+                alert('حدث خطأ في الاتصال بالإنترنت.');
+            }).finally(() => {
                 submitBtn.disabled = false;
                 btnText.innerHTML = "إرسال استمارة التسجيل";
             });
