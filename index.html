@@ -400,8 +400,8 @@
         </div>
     </section>
 
-    <!-- قسم الفعاليات والأنشطة -->
-<section id="events" class="py-20 bg-white">
+    <!-- قسم الفعاليات والأنشطة الميدانية -->
+<section id="events" class="py-20 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- عنوان القسم -->
@@ -421,56 +421,75 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <!-- فعالية رقم 1 -->
-            <div class="bg-slate-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 group">
-                <div class="relative h-48 bg-gradient-to-br from-brand-navy to-brand-teal flex items-center justify-center text-white">
-                    <!-- مكان الصورة أو أيقونة معبرة -->
-                    <i class="fa-solid fa-calendar-days text-5xl opacity-80 group-hover:scale-110 transition-transform"></i>
-                    <span class="absolute top-4 right-4 bg-white/90 text-brand-navy font-bold text-xs px-3 py-1 rounded-full shadow-sm">
-                        قريباً
-                    </span>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center gap-2 text-brand-teal text-xs font-bold mb-2">
-                        <i class="fa-regular fa-clock"></i> 25 نوفمبر 2026
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop" 
+                             alt="معسكر إعداد القيادات" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-brand-navy/90 text-white font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">
+                            قريباً
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-brand-navy transition-colors">
-                        معسكر تدريبي لإعداد القيادات الشابة
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        لقاء موسع لتأهيل الشباب وتنمية مهارات التواصل والعمل الجماعي بمحافظة الفيوم.
-                    </p>
-                    <div class="flex items-center justify-between pt-4 border-t border-gray-200/60">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-brand-teal text-xs font-bold mb-2">
+                            <i class="fa-regular fa-clock"></i> 25 نوفمبر 2026
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-brand-navy transition-colors">
+                            معسكر تدريبي لإعداد القيادات الشابة
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            لقاء موسع لتأهيل الشباب وتنمية مهارات التواصل والعمل الجماعي بمحافظة الفيوم.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                         <span class="text-xs text-gray-500"><i class="fa-solid fa-location-dot ml-1"></i> الفيوم</span>
-                        <a href="https://www.facebook.com/sandshababelsayed" target="_blank" class="text-brand-teal font-bold text-sm hover:underline flex items-center gap-1">
-                            التفاصيل <i class="fa-solid fa-arrow-left text-xs"></i>
-                        </a>
+                        <button onclick="openEventModal('معسكر تدريبي لإعداد القيادات الشابة', '25 نوفمبر 2026', 'الفيوم', 'هذا المعسكر يهدف إلى صقل مهارات القيادة الشابة وبناء قدراتهم الإدارية والمجتمعية من خلال ورش عمل تفاعلية وجلسات نقاشية مع نخبة من المتخصصين.', [
+                            'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&auto=format&fit=crop',
+                            'https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=600&auto=format&fit=crop',
+                            'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop'
+                        ])" class="text-brand-teal font-bold text-sm hover:underline flex items-center gap-1 cursor-pointer">
+                            عرض التفاصيل <i class="fa-solid fa-arrow-left text-xs"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- فعالية رقم 2 (انسخ الكود ده لو حابب تزود فعالية تانية) -->
-            <div class="bg-slate-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300 group">
-                <div class="relative h-48 bg-gradient-to-br from-slate-800 to-brand-navy flex items-center justify-center text-white">
-                    <i class="fa-solid fa-hands-holding-child text-5xl opacity-80 group-hover:scale-110 transition-transform"></i>
-                    <span class="absolute top-4 right-4 bg-green-500 text-white font-bold text-xs px-3 py-1 rounded-full shadow-sm">
-                        تمت بنجاح
-                    </span>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center gap-2 text-brand-teal text-xs font-bold mb-2">
-                        <i class="fa-regular fa-clock"></i> نوفمبر 2026
+            <!-- فعالية رقم 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-48 overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600&auto=format&fit=crop" 
+                             alt="توزيع المساعدات" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-green-600/90 text-white font-bold text-xs px-3 py-1 rounded-full backdrop-blur-sm">
+                            تمت بنجاح
+                        </span>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-brand-navy transition-colors">
-                        قسيمة توزيع المساعدات المجتمعية
-                    </h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                        مشاركة فعالة من أعضاء الكيان في توزيع الدعم على الأسر الأكثر احتياجاً بالقرى.
-                    </p>
-                    <div class="flex items-center justify-between pt-4 border-t border-gray-200/60">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 text-brand-teal text-xs font-bold mb-2">
+                            <i class="fa-regular fa-clock"></i> نوفمبر 2026
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-brand-navy transition-colors">
+                            قافلة توزيع المساعدات المجتمعية
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            مشاركة فعالة من أعضاء الكيان في توزيع الدعم على الأسر الأكثر احتياجاً بالقرى.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                         <span class="text-xs text-gray-500"><i class="fa-solid fa-location-dot ml-1"></i> مركز دمو</span>
-                        <a href="https://www.facebook.com/sandshababelsayed" target="_blank" class="text-brand-teal font-bold text-sm hover:underline flex items-center gap-1">
-                            صور الفعالية <i class="fa-solid fa-arrow-left text-xs"></i>
-                        </a>
+                        <button onclick="openEventModal('قافلة توزيع المساعدات المجتمعية', 'نوفمبر 2026', 'مركز دمو', 'في إطار الدور المجتمعي لكيان سند شباب الصعيد، نظمت لجان العمل المجتمعي قافلة لتوزيع المساعدات والدعم العيني على الأسر المستحقة بقرية دمو والقرى المجاورة.', [
+                            'https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=600&auto=format&fit=crop',
+                            'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop',
+                            'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600&auto=format&fit=crop'
+                        ])" class="text-brand-teal font-bold text-sm hover:underline flex items-center gap-1 cursor-pointer">
+                            عرض التفاصيل <i class="fa-solid fa-arrow-left text-xs"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -629,24 +648,81 @@
             });
         });
    </script>
-<!-- الأيقونات العائمة الثابتة على يمين الشاشة -->
-<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-    
-    <!-- أيقونة الواتساب الثابتة -->
-    <a href="https://wa.me/201000000000?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20الانضمام%20لكيان%20سند%20شباب%20الصعيد" 
-       target="_blank" 
-       aria-label="تواصل واتساب"
-       class="w-12 h-12 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-[#20ba5a] transition-all duration-300">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-    </a>
-
-    <!-- أيقونة الفيسبوك الثابتة -->
+<!-- الأيقونات العائمة الثابتة بجانب بعضها (الفيسبوك أولاً ثم الواتساب) -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-row items-center gap-3">
+    <!-- 1. أيقونة الفيسبوك -->
     <a href="https://www.facebook.com/sandshababelsayed/?locale=ar_AR" 
        target="_blank" 
        aria-label="صفحة الفيسبوك"
        class="w-12 h-12 bg-[#1877F2] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-[#1565c0] transition-all duration-300">
         <i class="fa-brands fa-facebook-f text-xl"></i>
     </a>
+
+    <!-- 2. أيقونة الواتساب -->
+    <a href="https://wa.me/201000000000?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20الانضمام%20لكيان%20سند%20شباب%20الصعيد" 
+       target="_blank" 
+       aria-label="تواصل واتساب"
+       class="w-12 h-12 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-[#20ba5a] transition-all duration-300">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+</div>
+
+<!-- نافذة تفاصيل الفعالية ومعرض الصور (Modal) -->
+<div id="eventModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 md:p-8 relative">
+        <button onclick="closeEventModal()" class="absolute top-5 left-5 w-10 h-10 rounded-full bg-slate-100 text-gray-700 flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<!-- كود التشغيل البسيط -->
+<script>
+    function openEventModal(title, date, location, description, images) {
+        const modal = document.getElementById('eventModal');
+        const contentDiv = document.getElementById('modalContent');
+
+        let imagesHtml = '';
+        images.forEach(imgUrl => {
+            imagesHtml += `
+                <div class="h-32 md:h-40 rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+                    <img src="${imgUrl}" alt="صورة من الفعالية" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            `;
+        });
+
+        contentDiv.innerHTML = `
+            <div class="flex items-center gap-3 text-xs font-bold text-brand-teal mb-2">
+                <span><i class="fa-regular fa-clock ml-1"></i> ${date}</span>
+                <span>•</span>
+                <span><i class="fa-solid fa-location-dot ml-1"></i> ${location}</span>
+            </div>
+            <h3 class="text-2xl font-extrabold text-brand-navy mb-4">${title}</h3>
+            <p class="text-gray-600 text-base leading-relaxed mb-6">${description}</p>
+            <h4 class="text-lg font-bold text-gray-900 mb-3 border-b pb-2">معرض صور الفعالية</h4>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                ${imagesHtml}
+            </div>
+        `;
+
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeEventModal() {
+        const modal = document.getElementById('eventModal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+
+    window.addEventListener('click', function(event) {
+        const modal = document.getElementById('eventModal');
+        if (event.target === modal) {
+            closeEventModal();
+        }
+    });
+</script>
 
 </div>
 </body>
